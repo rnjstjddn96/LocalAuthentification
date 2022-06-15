@@ -10,9 +10,11 @@
 		DF5A8A8E2850813D0031294E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A8A8D2850813D0031294E /* AppDelegate.swift */; };
 		DF5A8A902850813D0031294E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A8A8F2850813D0031294E /* SceneDelegate.swift */; };
 		DF5A8A922850813D0031294E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A8A912850813D0031294E /* ViewController.swift */; };
-		DF5A8A952850813D0031294E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5A8A932850813D0031294E /* Main.storyboard */; };
 		DF5A8A972850813D0031294E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A8A962850813D0031294E /* Assets.xcassets */; };
 		DF5A8A9A2850813D0031294E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5A8A982850813D0031294E /* LaunchScreen.storyboard */; };
+		DF97A7FE28595BA700E882B7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF97A7FD28595BA700E882B7 /* ViewModel.swift */; };
+		DF97A80028595BC400E882B7 /* AuthUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF97A7FF28595BC400E882B7 /* AuthUtils.swift */; };
+		DF97A80228595BF300E882B7 /* BiometricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF97A80128595BF300E882B7 /* BiometricType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		DF5A8A8D2850813D0031294E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5A8A8F2850813D0031294E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DF5A8A912850813D0031294E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DF5A8A942850813D0031294E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF5A8A962850813D0031294E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5A8A992850813D0031294E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF5A8A9B2850813D0031294E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF97A7FD28595BA700E882B7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DF97A7FF28595BC400E882B7 /* AuthUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUtils.swift; sourceTree = "<group>"; };
+		DF97A80128595BF300E882B7 /* BiometricType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				DF5A8A8D2850813D0031294E /* AppDelegate.swift */,
 				DF5A8A8F2850813D0031294E /* SceneDelegate.swift */,
 				DF5A8A912850813D0031294E /* ViewController.swift */,
-				DF5A8A932850813D0031294E /* Main.storyboard */,
+				DF97A7FD28595BA700E882B7 /* ViewModel.swift */,
+				DF97A7FF28595BC400E882B7 /* AuthUtils.swift */,
+				DF97A80128595BF300E882B7 /* BiometricType.swift */,
 				DF5A8A962850813D0031294E /* Assets.xcassets */,
 				DF5A8A982850813D0031294E /* LaunchScreen.storyboard */,
 				DF5A8A9B2850813D0031294E /* Info.plist */,
@@ -127,7 +133,6 @@
 			files = (
 				DF5A8A9A2850813D0031294E /* LaunchScreen.storyboard in Resources */,
 				DF5A8A972850813D0031294E /* Assets.xcassets in Resources */,
-				DF5A8A952850813D0031294E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5A8A922850813D0031294E /* ViewController.swift in Sources */,
+				DF97A80028595BC400E882B7 /* AuthUtils.swift in Sources */,
+				DF97A80228595BF300E882B7 /* BiometricType.swift in Sources */,
 				DF5A8A8E2850813D0031294E /* AppDelegate.swift in Sources */,
+				DF97A7FE28595BA700E882B7 /* ViewModel.swift in Sources */,
 				DF5A8A902850813D0031294E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF5A8A932850813D0031294E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF5A8A942850813D0031294E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DF5A8A982850813D0031294E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,7 +292,6 @@
 				INFOPLIST_FILE = LocalAuthentification/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +319,6 @@
 				INFOPLIST_FILE = LocalAuthentification/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
